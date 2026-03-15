@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Privacy Insight",
+  "version": "1.0.0",
+  "description": "Detect third-party trackers on webpages and assess privacy risk",
+  "permissions": [
+    "webRequest",
+    "tabs",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Privacy Insight"
+  }
+}
+
