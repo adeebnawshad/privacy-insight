@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Insight</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <!-- Header shown at the top of the extension popup -->
+  <div class="header">
+    <h1>🛡️ Privacy Insight</h1>
+    <p class="subtitle">See how this page may be tracking you</p>
+  </div>
+
+  <!-- Main popup content -->
+  <div class="container">
+
+    <!-- Summary section showing total tracker count and risk level -->
+    <div class="summary">
+      <div class="stat">
+        <span class="label">Trackers Detected</span>
+        <span class="count" id="trackerCount">—</span>
+      </div>
+      <div class="stat">
+        <span class="label">Privacy Risk</span>
+        <span class="risk-level" id="riskLevel">—</span>
+      </div>
+    </div>
+
+    <!-- List of detected trackers -->
+    <div class="section">
+      <h2>Detected Trackers</h2>
+      <div id="trackersList" class="trackers-list">
+        <p class="loading">Loading...</p>
+      </div>
+    </div>
+
+    <!-- Plain-language explanation for the user -->
+    <div class="section explanation">
+      <h2>What does this mean?</h2>
+      <div id="explanation" class="explanation-text">
+        <p class="loading">Loading...</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
